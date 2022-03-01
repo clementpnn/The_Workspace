@@ -1,0 +1,13 @@
+.date {
+    grid-area: 3 / 2;
+}
+
+.dates {
+    text-align: center;
+    font-size: $font-title;
+    color: $main-color;
+}
+
+.dates::first-letter {
+    text-transform: capitalize;
+}

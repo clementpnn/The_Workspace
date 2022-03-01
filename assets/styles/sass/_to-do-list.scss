@@ -1,0 +1,76 @@
+.container-to-do {
+    grid-area: 1 / 1;
+}
+
+form {
+    width: $width-grid;
+    height: 70px;
+    display: flex;
+
+    > * {
+        padding: 15px;
+        height: $width-grid;
+    }
+
+    input {
+        border-radius: $radius 0 0 $radius;
+        width: 90%;
+        font-size: $font-txt-big;
+        background-color: $nav-color;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    button {
+        border-radius: 0 $radius $radius 0;
+        @include center;
+        width: 10%;
+        background-color: $cta-color;
+    }
+}
+
+.list {
+    list-style-type: none;
+    margin: 50px auto 0;
+    width: $width-grid;
+
+    li {
+        width: $width-grid;
+        background-color: $nav-color;
+        @include align-center();
+        color: $secondary-color;
+        margin: 10px 0;
+        border-radius: $radius;
+        padding: 10px 5px;
+
+        input {
+            width: 30px;
+            height: 30px;
+            margin-left: 15px;
+        }
+
+        button {
+            margin-left: auto;
+            padding: 5px;
+            background-color: $cta-color;
+            @include center;
+            border-radius: $radius;
+        }
+
+        span {
+            font-size: $font-txt-big;
+            margin-left: 20px;
+        }
+    }
+
+    li.endOfTask span {
+        text-decoration: line-through;
+    }
+}
+
+img {
+    width: 40px;
+    pointer-events: none;
+}

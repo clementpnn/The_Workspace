@@ -1,0 +1,20 @@
+html {
+    --res: calc(0.01 * 10vmin)
+}
+
+$bg-color: #26282B;
+$main-color: #A18276;
+$secondary-color: #353941;
+$cta-color: #9191E9;
+$nav-color: #F1F1F1;
+
+$font:Verdana, Geneva, Tahoma, sans-serif;
+
+$font-txt: calc(18 * var(--res));
+$font-txt-big: calc(24 * var(--res));
+$font-subtitle: calc(30 * var(--res));
+$font-subtitle-big: calc(36 * var(--res));
+$font-title: calc(42 * var(--res));
+
+$radius: 10px;
+$width-grid: 100%;

@@ -1,0 +1,59 @@
+.container-pomodoro {
+    grid-area: 2 / 2;
+}
+
+.window-timer {
+    background-color: $main-color;
+    width: $width-grid;
+    display: flex;
+    border-radius: $radius $radius 0 0;
+
+    .block {
+        width: 50%;
+        @include center;
+        flex-direction: column;
+        padding: 40px;
+
+        p:nth-child(1) {
+            font-size: $font-subtitle-big;
+            margin-bottom: 15px;
+            color: $secondary-color;
+        }
+
+        p:nth-child(2) {
+            font-weight: 400;
+            font-size: $font-subtitle-big;
+            color: $secondary-color;
+        }
+    }
+}
+
+.window-btn {
+    width: $width-grid;
+    @include center;
+
+    .btn {
+        border-top: 1px solid $secondary-color;
+        background-color: $main-color;
+        display: block;
+        padding: 15px;
+        font-size: $font-txt;
+        width: 33.33%;
+        color: $secondary-color;
+    }
+
+    .b1 {
+        border-radius: 0 0 0 $radius;
+        border-right: 1px solid $secondary-color;
+    }
+    
+    .b3 {
+        border-radius: 0 0 $radius 0;
+        border-left: 1px solid $secondary-color;
+    }
+}
+
+
+
+
+
